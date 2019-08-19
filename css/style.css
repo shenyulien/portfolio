@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0.5px solid rgba(194, 3, 3,0);
+}
+#main{
+    width: 92%;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+}
+#logo{
+    float: left;
+    margin: 10px;
+    font-size: 2em;
+   
+}
+#logo a{
+    text-decoration: none;
+}
+#nav-bar{
+    float: right;
+    margin: 10px;
+    font-size: 1em;
+    vertical-align: bottom;
+}
+#nav-bar a{
+    margin: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
