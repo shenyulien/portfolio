@@ -2,11 +2,23 @@
     margin: 0;
     padding: 0;
     border: 0.5px solid rgba(194, 3, 3,0);
+    /* 盒子模式 預防跑板 */
+    box-sizing: border-box;
+    transition: 1s;
 }
 #main{
     width: 92%;
     margin: 0 auto;
+    /* 字體 */
     font-family: 'Quicksand', sans-serif;
+    /* 跟營幕一樣高 vh=view height */
+    height:100vh;
+}
+
+#navigation{
+    padding:20px 0;
+    overflow: hidden;
+    height:15vh;
 }
 #logo{
     float: left;
@@ -16,6 +28,7 @@
 }
 #logo a{
     text-decoration: none;
+    color: #000
 }
 #nav-bar{
     float: right;
@@ -26,6 +39,153 @@
 #nav-bar a{
     margin: 20px;
     text-decoration: none;
-    border-bottom: 2px solid #000;
     padding-bottom: 5px;
+    color: #000;
+    /* 定位 相對定位(父元素) */
+    position: relative;
+    font-weight: 600;
 }
+#nav-bar a:hover{
+    color: rgba(171, 202, 70, 0.609);
+}
+/* 偽元素 */
+#nav-bar a::before{
+    content:"";
+    /* 定位:絕對定位(子元素) */
+    position:absolute;
+    background-color: #000;
+    width: 90%;
+    height:1px;
+    margin:0 5%;
+    bottom:-3px;
+}
+/* class前面用. id前面用# */
+.picture img{
+    width:100%;
+    /* 自動縮放  fill/ contain/cover */
+    /* object-fit: contain; */
+    width: 120%;
+    max-width: 500px;
+    position: absolute;
+    left: -50%;
+    top:20%;
+}
+.picture{
+    background-color: rgba(171, 202, 70, 0.609);
+    position: relative;
+    margin-right: 20px;
+
+}
+.work1{
+    display: none;
+    grid-template-columns: 40% 20% 40%;
+    height:75vh;
+}
+.active{
+    display:grid;
+}
+#main footer{
+    height:10vh;
+    text-align: center;
+    color: rgb(87, 88, 88);
+    margin-top: 15px;
+}
+.words h1{
+   margin-top:40px; 
+   margin-bottom:30px;
+   color: rgba(171, 202, 70, 0.87);
+   font-size: 60px;
+}
+.words .button{
+  margin-top: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size:20px;
+  color: #000;
+  transition:2s;
+}
+.words p{
+    line-height: 3;
+}
+.words{
+    margin:15px;
+}
+.words hr{
+    height:3px;
+    background-color:rgba(171, 202, 70, 0.609);
+    margin-bottom: 15px;
+}
+
+.words .button:hover{
+    transform: translateX(30px);
+}
+.ufo h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 50px;
+    color:rgb(241, 116, 58);
+}
+.ufo h1{
+    margin-top:5px;
+    margin-bottom: 0px;
+    color: rgb(241, 116, 58);
+}
+.ufo .words hr{
+   background-color:rgb(241, 116, 58);
+   margin-top: 10px;
+}
+.ufo .picture{
+    background-color: rgba(241, 116, 58, 0.534);
+    position: relative;
+}
+.ufo .picture img{
+    position: absolute;
+    top:100px;
+    left: -200px;
+}
+/* 作品導覽列 */
+#work-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+#work-nav a{
+    color: rgb(100, 99, 99);
+    text-decoration: none;
+    font-weight:700;
+    position: relative;
+}
+#work-nav a::after{
+    content:"";
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(100, 99, 99);
+    height:2px;
+    bottom:-5px;
+    left:0px; 
+    width: 0%;
+    transition: 1s
+}
+#work-nav a:hover::after{
+    width: 100%;
+}
+
+#work-nav a:nth-of-type(1){
+    color: rgba(171, 202, 70, 0.87);
+}
+#work-nav a:nth-of-type(1):after{
+    background-color: rgba(171, 202, 70, 0.87);
+}
+#work-nav a:nth-of-type(2):hover{
+    color:rgb(241, 116, 58);
+}
+#work-nav a:nth-of-type(2):after{
+    background-color:rgb(241, 116, 58);
+}
+#work-nav a:nth-of-type(3):hover{
+    color:rgb(47, 187, 223);
+}
+#work-nav a:nth-of-type(3):after{
+    background-color:rgb(47, 187, 223);
+}
+
