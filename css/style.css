@@ -10,7 +10,7 @@
     width: 92%;
     margin: 0 auto;
     /* 字體 */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poiret One', cursive;
     /* 跟營幕一樣高 vh=view height */
     height:100vh;
 }
@@ -50,6 +50,7 @@
 }
 /* 偽元素 */
 #nav-bar a::before{
+    /* 要打才會空出位子 可以放括號標點符號 */
     content:"";
     /* 定位:絕對定位(子元素) */
     position:absolute;
@@ -61,7 +62,7 @@
 }
 /* class前面用. id前面用# */
 .picture img{
-    width:100%;
+
     /* 自動縮放  fill/ contain/cover */
     /* object-fit: contain; */
     width: 120%;
@@ -71,10 +72,17 @@
     top:20%;
 }
 .picture{
-    background-color: rgba(171, 202, 70, 0.609);
+    background-color: rgba(171, 202, 70, 0);
     position: relative;
     margin-right: 20px;
 
+}
+.work1 .picture{
+    background-image: url(/img/green.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position-x: -80px;
+    
 }
 .work1{
     display: none;
@@ -106,6 +114,7 @@
 }
 .words p{
     line-height: 3;
+    font-weight: 600;
 }
 .words{
     margin:15px;
@@ -135,8 +144,13 @@
    margin-top: 10px;
 }
 .ufo .picture{
-    background-color: rgba(241, 116, 58, 0.534);
+    background-color: rgba(241, 116, 58, 0);
     position: relative;
+    background-image: url(/img/pink.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-x: -90px;
+    background-position-y:10px; 
 }
 .ufo .picture img{
     position: absolute;
@@ -187,5 +201,29 @@
 }
 #work-nav a:nth-of-type(3):after{
     background-color:rgb(47, 187, 223);
+}
+.light h1{
+margin-top:0px;
+color:rgb(89, 170, 190);   
+}
+.light .button{
+    margin-top: 0px;
+}
+.light .picture{
+    position: relative;
+    background-image: url(/img/blue.png);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position-x: -130px;
+}
+.light .picture img {
+    width: 130%;
+    max-width: 800px;
+    position: absolute;
+    left:-300px;
+    top:5px;
+}
+.light .words hr{
+    background-color:rgb(89, 170, 190);  
 }
 
