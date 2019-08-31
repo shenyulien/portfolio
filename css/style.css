@@ -226,4 +226,88 @@ color:rgb(89, 170, 190);
 .light .words hr{
     background-color:rgb(89, 170, 190);  
 }
-
+/* yummy start */
+.picture1 h1{
+    font-size: 60px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: rgba(171, 202, 70, 0.87);
+}
+.picture1 img{
+    width: 100%;
+}
+.description{
+    width: 600px;   
+    margin:10px;
+}
+.workinformation{
+    display: inline block;
+    margin: 10px;
+}
+.yilanchair img{
+    width: 100%;
+}
+.yilanchair p{
+    text-align: center;
+    width:800px;
+    margin:0 auto 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.yilanchair hr{
+    background-color: rgba(171, 202, 70, 0.87);
+    width: 100px;
+    margin:0 auto 0 auto;
+    height: 2px;
+}
+.model img{
+    width: 100%;
+}
+.model h2{
+    text-align: center;
+    margin:20px;
+}
+.model p{
+    text-align: center;
+    width:800px;
+    margin:0 auto 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.model hr{
+    background-color: rgba(171, 202, 70, 0.87);
+    width: 100px;
+    margin:0 auto 0 auto;
+    height: 2px;
+    margin-bottom: 20px;
+}
+.material img{
+    width: 80%;
+}
+.material{
+    position: relative;
+}
+.material p{
+    line-height: 7.2;
+    position: absolute;
+    left:450px;
+    top:150px;
+    font-size: 1.5em;
+    
+}
+.material h2{
+    position: absolute;
+    top:50px;
+    left:500px;
+}
+.material hr{
+    background-color: rgba(171, 202, 70, 0.87);
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    top:100px;
+    left:570px;
+    }
+.process{
+    width:100%;
+}
