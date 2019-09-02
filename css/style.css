@@ -233,6 +233,11 @@ color:rgb(89, 170, 190);
     margin-bottom: 20px;
     color: rgba(171, 202, 70, 0.87);
 }
+.workinformation{
+    display: inline block;
+    margin: 10px;
+    
+}
 .picture1 img{
     width: 100%;
 }
@@ -240,12 +245,13 @@ color:rgb(89, 170, 190);
     width: 600px;   
     margin:10px;
 }
-.workinformation{
-    display: inline block;
-    margin: 10px;
-}
+
 .yilanchair img{
     width: 100%;
+}
+.yilanchair h2{
+    text-align: center;
+    margin:20px;
 }
 .yilanchair p{
     text-align: center;
