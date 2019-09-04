@@ -10,7 +10,7 @@
     width: 92%;
     margin: 0 auto;
     /* 字體 */
-    font-family: 'Poiret One', cursive;
+    font-family: 'Montserrat', sans-serif;
     /* 跟營幕一樣高 vh=view height */
     height:100vh;
 }
@@ -109,12 +109,14 @@
   text-decoration: none;
   display: inline-block;
   font-size:20px;
-  color: #000;
+  color: rgb(0, 0, 0);
   transition:2s;
 }
 .words p{
     line-height: 3;
-    font-weight: 600;
+    font-weight: 550;
+    color: rgb(75, 73, 73);
+    font-size: 0.9em;
 }
 .words{
     margin:15px;
@@ -236,14 +238,20 @@ color:rgb(89, 170, 190);
 .workinformation{
     display: inline block;
     margin: 10px;
+    color: rgb(75, 73, 73);
+    font-size: 0.9em;
     
 }
 .picture1 img{
     width: 100%;
 }
 .description{
-    width: 600px;   
-    margin:10px;
+    text-align: center;   
+    margin:20px;
+    width: 750px;
+    margin:0 auto 0 auto;
+    color: rgb(75, 73, 73);
+    font-size: 0.9em;
 }
 
 .yilanchair img{
@@ -252,6 +260,7 @@ color:rgb(89, 170, 190);
 .yilanchair h2{
     text-align: center;
     margin:20px;
+    color: rgb(75, 73, 73);
 }
 .yilanchair p{
     text-align: center;
@@ -259,6 +268,8 @@ color:rgb(89, 170, 190);
     margin:0 auto 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: rgb(75, 73, 73);
+    font-size: 0.9em;
 }
 .yilanchair hr{
     background-color: rgba(171, 202, 70, 0.87);
@@ -272,6 +283,7 @@ color:rgb(89, 170, 190);
 .model h2{
     text-align: center;
     margin:20px;
+    color: rgb(75, 73, 73);
 }
 .model p{
     text-align: center;
@@ -279,6 +291,8 @@ color:rgb(89, 170, 190);
     margin:0 auto 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
+    color: rgb(75, 73, 73);
+    font-size: 0.9em;
 }
 .model hr{
     background-color: rgba(171, 202, 70, 0.87);
@@ -294,17 +308,21 @@ color:rgb(89, 170, 190);
     position: relative;
 }
 .material p{
-    line-height: 7.2;
+    line-height: 7;
     position: absolute;
     left:450px;
-    top:150px;
+    top:120px;
     font-size: 1.5em;
+    color: rgb(75, 73, 73);
+    
     
 }
 .material h2{
     position: absolute;
     top:50px;
     left:500px;
+    color: rgb(75, 73, 73);
+    
 }
 .material hr{
     background-color: rgba(171, 202, 70, 0.87);
