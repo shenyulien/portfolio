@@ -335,3 +335,41 @@ color:rgb(89, 170, 190);
 .process{
     width:100%;
 }
+/* 燈 */
+.picture .light h1{
+    color: aqua;
+}
+.description h2{
+    margin: 10px;
+}
+.museum img{
+    width: 100%;
+}
+.museum p{
+    text-align: center;
+    color: rgb(75, 73, 73);
+}
+.museum h2{
+    text-align: center;
+    margin: 20px;
+    color: rgb(75, 73, 73);
+}
+
+.museum hr{
+    background-color: rgb(81, 131, 179);
+    width: 100px;
+    margin:0 auto 0 auto;
+    height: 2px;
+}
+
+.museum p{
+    margin:10px;
+    color: rgb(75, 73, 73);
+}
+.onsale p{
+    text-align: center;
+    color: rgb(75, 73, 73);
+}
+.onsale img{
+    margin:0 auto 0 auto;
+}
