@@ -81,7 +81,7 @@
 
 }
 .work1 .picture{
-    background-image: url(/img/green.png);  
+    background-image: url(../img/green.png);  
     left:120px;  
 }
 .work1{
@@ -156,7 +156,7 @@
 }
 .ufo .picture{
     position: relative;
-    background-image: url(/img/pink.png); 
+    background-image: url(../img/pink.png); 
 }
 .ufo .picture img{
     position: absolute;
@@ -219,7 +219,8 @@ color:rgb(89, 170, 190);
 }
 .light .picture{
     position: relative;
-    background-image: url(/img/blue.png);
+    /* ../上一層資料夾 */
+    background-image: url(../img/blue.png);
 }
 
 .light .picture img {
