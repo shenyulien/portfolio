@@ -4,7 +4,8 @@
     border: 0.5px solid rgba(194, 3, 3,0);
     /* 盒子模式 預防跑板 */
     box-sizing: border-box;
-    transition: 1s;
+    /* transition: 1s; */
+    color: rgb(75, 73, 73);
 }
 #main{
     width: 92%;
@@ -44,6 +45,7 @@
     /* 定位 相對定位(父元素) */
     position: relative;
     font-weight: 600;
+    transition: 1s;
 }
 #nav-bar a:hover{
     color: rgba(171, 202, 70, 0.609);
@@ -66,37 +68,37 @@
     /* 自動縮放  fill/ contain/cover */
     /* object-fit: contain; */
     width: 120%;
+    /* 最大尺寸 */
     max-width: 500px;
     position: absolute;
-    left: -50%;
+    left: 0%;
     top:20%;
 }
 .picture{
     background-color: rgba(171, 202, 70, 0);
     position: relative;
-    margin-right: 20px;
+    
 
 }
 .work1 .picture{
-    background-image: url(/img/green.png);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position-x: -80px;
-    
+    background-image: url(/img/green.png);  
+    left:120px;  
 }
 .work1{
-    display: none;
-    grid-template-columns: 40% 20% 40%;
+    display: grid!important;
+    grid-template-columns: 40% 60%;
     height:75vh;
+    /* 溢出的地方隱藏 */
+    overflow: hidden;
 }
-.active{
-    display:grid;
-}
+
+
 #main footer{
-    height:10vh;
+    height:3vh;
     text-align: center;
     color: rgb(87, 88, 88);
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 10px;
 }
 .words h1{
    margin-top:40px; 
@@ -145,25 +147,29 @@
    background-color:rgb(241, 116, 58);
    margin-top: 10px;
 }
-.ufo .picture{
-    background-color: rgba(241, 116, 58, 0);
-    position: relative;
-    background-image: url(/img/pink.png);
+/* 首頁背景圖 */
+.picture{
     background-repeat: no-repeat;
-    background-size: 110%;
-    background-position-x: -90px;
-    background-position-y:10px; 
+    background-size: 80%;
+    background-position-x:0px;
+    background-position-y:0px; 
+}
+.ufo .picture{
+    position: relative;
+    background-image: url(/img/pink.png); 
 }
 .ufo .picture img{
     position: absolute;
-    top:100px;
-    left: -200px;
+    top:50px;
+    left: -100px;
+
 }
 /* 作品導覽列 */
 #work-nav{
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
+    height:3vh;
 }
 #work-nav a{
     color: rgb(100, 99, 99);
@@ -214,10 +220,8 @@ color:rgb(89, 170, 190);
 .light .picture{
     position: relative;
     background-image: url(/img/blue.png);
-    background-repeat: no-repeat;
-    background-size: 130%;
-    background-position-x: -130px;
 }
+
 .light .picture img {
     width: 130%;
     max-width: 800px;
@@ -232,18 +236,50 @@ color:rgb(89, 170, 190);
 .picture1 h1{
     font-size: 60px;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    color: rgba(171, 202, 70, 0.87);
+}
+.title h2{
+    font-size: 15px;
+    margin-left: 80px;
     color: rgba(171, 202, 70, 0.87);
 }
 .workinformation{
-    display: inline block;
     margin: 10px;
     color: rgb(75, 73, 73);
     font-size: 0.9em;
-    
+   }
+.title{
+    grid-template-columns:60% 40%;
+    display: grid; 
+
+}
+.title ul{
+    list-style: none;
+    border-left:1px solid rgb(75, 73, 73);
+    padding-left:20px;
 }
 .picture1 img{
     width: 100%;
+    }
+/* 滑入顯示字 字跟圖片要在一個div */
+.yummyhover{
+    position: relative;
+}
+.yummyhover p{
+position: absolute;
+background-color:rgba(171, 202, 70, 0.719);
+color: white;
+padding: 30px;
+top:50%;
+left:50%;
+/* 變形位移 */
+transform:translateX(-50%) translateY(-50%);
+opacity: 0;
+transition:2s;
+}
+.yummyhover:hover p{
+    opacity: 1;
 }
 .description{
     text-align: center;   
@@ -336,8 +372,11 @@ color:rgb(89, 170, 190);
     width:100%;
 }
 /* 燈 */
-.picture .light h1{
-    color: aqua;
+.light h1{
+    color:rgb(81, 131, 179);
+}
+.light h2{
+    color:rgb(81, 131, 179);
 }
 .description h2{
     margin: 10px;
@@ -370,6 +409,82 @@ color:rgb(89, 170, 190);
     text-align: center;
     color: rgb(75, 73, 73);
 }
-.onsale img{
-    margin:0 auto 0 auto;
+.onsale{
+    text-align: center;
+}
+/* 外掛 */
+/* yummy */
+.slick-prev{
+    left:20px;
+    z-index: 1;
+}
+.slick-next{
+    right:20px;
+    z-index: 1;
+}
+/* 首頁外掛 */
+.slick-dots{
+    position: static;
+    height:3vh;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.slick-dotted.slick-slider{
+    margin-bottom:0px;
+}
+/* 偽元素 */
+.slick-dots li:nth-child(1) button:before{
+    content: "YUMMY";
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    }
+.slick-dots li:nth-child(2) button:before{
+    content: "FIREUFO";
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;    
+}
+.slick-dots li:nth-child(3) button:before{
+    content: "RETURN";
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;    
+}
+.slick-dots li button:before{
+    opacity:1;
+    color: rgb(92, 86, 86)!important;
+}
+li.slick-active:nth-child(1) button:before{
+    color:  rgb(171, 202, 70)!important;
+}
+li.slick-active:nth-child(2) button:before{
+    color:  rgb(241, 116, 58)!important;
+}
+li.slick-active:nth-child(3) button:before{
+    color: rgb(81, 131, 179)!important;
+}
+/* 底線滑入效果 */
+.slick-dots li:before{
+    content:"";
+    position: absolute;
+    display: inline-block;
+    height:1.5px;
+    bottom:-5px;
+    left:0px; 
+    /* 原本0 */
+    width: 0%;
+    transition: 1s
+    }
+    /* 滑入時變300 */
+.slick-dots li:hover:before{
+    width:300%;
+}
+.slick-dots li:nth-child(1):before{
+    background-color: rgb(171, 202, 70);}
+.slick-dots li:nth-child(2):before{
+    background-color: rgb(241, 116, 58);}
+.slick-dots li:nth-child(3):before{
+    background-color:  rgb(81, 131, 179);}
+/* 被選到的時候固定底線 */
+.slick-dots li:nth-child(1).slick-active:before{
+    width:300%
 }
