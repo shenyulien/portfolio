@@ -6,6 +6,7 @@
     box-sizing: border-box;
     /* transition: 1s; */
     color: rgb(75, 73, 73);
+    font-family: 'Montserrat', sans-serif;
 }
 #main{
     width: 92%;
@@ -16,10 +17,16 @@
     height:100vh;
 }
 
+/* 導覽列 */
 #navigation{
     padding:20px 0;
     overflow: hidden;
     height:15vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(233, 231, 218, 0.842);
+    /* 前後順序1最前面 */
+    z-index: 1;
 }
 #logo{
     float: left;
@@ -245,6 +252,15 @@ color:rgb(89, 170, 190);
     background-color:rgb(89, 170, 190);  
 }
 /* yummy start */
+.container{
+    min-width:1300px;
+    max-width:1300px;
+    margin: 0 auto ;
+    padding: 18vh;
+}
+.container img{
+    width: 100%;
+}
 .picture1 h1{
     font-size: 60px;
     margin: 10px;
@@ -263,8 +279,12 @@ color:rgb(89, 170, 190);
     grid-template-columns:65% 5% 30%;
     display: grid; 
 }
+.information1{
+    font-size: 13px; 
+}
 .information2{
     text-align: right;
+    font-size: 13px;
 }
 
 .picture1 img{
@@ -292,8 +312,7 @@ transition:2s;
 .description{
     text-align: center;   
     margin:20px;
-    width: 750px;
-    margin:0 auto 0 auto;
+        margin:0 auto 0 auto;
     color: rgb(75, 73, 73);
     font-size: 0.9em;
 }
@@ -368,7 +387,7 @@ transition:2s;
     display:grid;
     grid-template-columns:60% 40%; 
     text-align: left;
-    position: relative;
+    
 }
 .light h1 {
     color:rgb(81, 131, 179);
@@ -380,16 +399,14 @@ transition:2s;
     margin: 10px;
     margin-left: 0px;
 }
+
 .designconceptwords{
-    width: 800px;
     margin-left: 10px;
-    position: absolute;
-    left:-250px;
-    top: 40px;
+   
 }
 
-.shilogo{
-    width: 70%;
+.shilogo img{
+    width: 100%;
 }
 
 .lightexploded{
