@@ -84,8 +84,9 @@
 .picture{
     background-color: rgba(171, 202, 70, 0);
     position: relative;
-    
-
+}
+.indexslider{
+    padding-top: 18vh;
 }
 .work1 .picture{
     background-image: url(../img/green.png);  
