@@ -456,7 +456,7 @@ transition:2s;
 .slick-dots{
     position: static;
     height:3vh;
-    display: flex;
+    display: flex!important;
     justify-content: space-between;
     margin-right: 20px;
 }
