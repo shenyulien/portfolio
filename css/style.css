@@ -447,6 +447,9 @@ transition:2s;
     z-index: 1;
 }
 /* 首頁外掛 */
+.slick-slide{
+    height:70vh;
+}
 .slick-dots{
     position: static;
     height:3vh;
