@@ -42,4 +42,8 @@ filter(".btn-cd",".cd");
 filter(".btn-web",".web");
 filter(".btn-all",".work-box");
 
-
+// info 展開解釋
+// jqclick
+$(".experience h2").click(function () { 
+    $(this).next("p").slideToggle();
+});

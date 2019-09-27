@@ -456,6 +456,13 @@ transition:2s;
     text-align: center;
     line-height: 30px;
     }
+.woodtype{
+    zoom:0.18;
+}
+.woodtype img{
+    width:auto;
+    }
+
 .colorchart{
     text-align: center;
     line-height: 30px;
@@ -539,6 +546,42 @@ iframe{
 }
 .work-box ul, .work-box button{
     display:none!important;
+}
+
+/* info */
+.timeline section{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border:0;
+}
+.year{
+    font-size: 50px;
+    margin-left: 50px;
+    border:0;
+    /* 時間線 */
+    border-right:1px solid rgb(100, 99, 99);
+    position: relative;
+    }
+.experience {
+ text-align: left!important;
+ padding-left: 50px;
+ }
+.experience p{
+display:none;
+}
+
+/* 偽元素 */
+.year::after{
+    content: "";
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(100, 99, 99);
+    /* 方形變圓形 */
+    border-radius: 50%;
+    position:absolute;
+    right:-6px;
+    top:15px;
 }
 /* 消失動畫 */
 .disappear{
@@ -774,4 +817,26 @@ li.slick-active:nth-child(3) button:before{
     100%{
         opacity:1;
     }
+}
+/* RWD 螢幕小於767手機時變化 */
+@media screen and (max-width:767px){
+    #navigation{
+    font-size: 0.5em;
+    }
+    .work1{
+        display: grid;
+        grid-template-columns: 1fr;
+        height:900px;
+    }
+    .work1 .words{
+        height:400px;
+    }
+    .work1 .picture{
+        height:400px;
+    }
+    .ufo .picture img{
+        top:-100px;
+        left:-120px;
+    }
+    
 }
