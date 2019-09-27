@@ -8,7 +8,7 @@
     <title>YU-LIEN SHEN | 首頁</title>
     <!-- 字體 -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <!-- Add the slick-theme -->
+    <!-- Add the slick-theme -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
@@ -16,16 +16,35 @@
 </head>
 
 <body>
-        <header id="navigation">
-                <div id="logo"><a href="index.html"> YU-LIEN SHEN</a></div>
-                <nav id="nav-bar">
-                    <a href="workspage.html">works</a>
-                    <a href="">info</a>
-                    <a href="">contact</a>
-                </nav>
-            </header>
+    <div id="loading">
+        <div id="color"></div>
+        <div id="logo-text">
+            <div>
+                <span>Y</span>
+                <span>U</span>
+                <span>-</span>
+                <span>L</span>
+                <span>I</span>
+                <span>E</span>
+                <span>N</span>
+                <span>&nbsp;</span>
+                <span>S</span>
+                <span>H</span>
+                <span>E</span>
+                <span>N</span>
+            </div>
+        </div>
+    </div>
+    <header id="navigation">
+        <div id="logo"><a href="index.html"> YU-LIEN SHEN</a></div>
+        <nav id="nav-bar">
+            <a href="workspage.html">works</a>
+            <a href="">info</a>
+            <a href="">contact</a>
+        </nav>
+    </header>
     <div id="main">
-       
+
         <div class=indexslider>
             <section class="work1 ">
                 <div class="words">
@@ -39,8 +58,8 @@
                     <a href="yummy.html" class="button">→</a>
                 </div>
                 <div class="picture">
-                     <!-- dataspeed控制滑鼠移動圖片的速度 -->
-                    <img src="img/yummy.png" alt="yummy"data-speed=4>
+                    <!-- dataspeed控制滑鼠移動圖片的速度 -->
+                    <img src="img/yummy.png" alt="yummy" data-speed=4>
                 </div>
             </section>
             <section class="work1 ufo  ">
@@ -54,8 +73,8 @@
                     <a href="#" class="button">→</a>
                 </div>
                 <div class="picture">
-                     <!-- dataspeed控制滑鼠移動圖片的速度 -->
-                    <img src="img/fireufo.png" alt="fireufo"data-speed=4>
+                    <!-- dataspeed控制滑鼠移動圖片的速度 -->
+                    <img src="img/fireufo.png" alt="fireufo" data-speed=4>
                 </div>
             </section>
             <section class="work1 light  ">
@@ -91,11 +110,11 @@
         $('.indexslider').slick({
             autoplay: true,
             autoplayspeed: 1000,
-            arrows: true,
+            arrows: false,
             infinite: true,
-            dots:true,
-            appendDots:$("#work-nav"),
-            fade:true
+            dots: true,
+            appendDots: $("#work-nav"),
+            fade: true
 
         });
     </script>
@@ -104,15 +123,15 @@
         document.addEventListener('mousemove', parallax);
         // 圖片後面要加dataspeed
 
-function parallax(e) {
-	this.querySelectorAll('.picture img').forEach(layer => {
-         // 圖片後面要加dataspeed
-		let speed = layer.getAttribute('data-speed');
-		let x = (window.innerWidth - e.pageX * speed) / 100;
-		let y = (window.innerWidth - e.pageY * speed) / 100;
-		layer.style.transform = `translate(${x}px, ${y}px)`;
-	});
-}
+        function parallax(e) {
+            this.querySelectorAll('.picture img').forEach(layer => {
+                // 圖片後面要加dataspeed
+                let speed = layer.getAttribute('data-speed');
+                let x = (window.innerWidth - e.pageX * speed) / 100;
+                let y = (window.innerWidth - e.pageY * speed) / 100;
+                layer.style.transform = `translate(${x}px, ${y}px)`;
+            });
+        }
     </script>
 </body>
 

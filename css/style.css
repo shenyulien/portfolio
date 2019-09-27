@@ -89,7 +89,6 @@
     padding-top: 18vh;
 }
 .work1 .picture{
-    background-image: url(../img/green.png);  
     left:120px;  
 }
 .work1{
@@ -147,7 +146,7 @@
 }
 
 .words .button:hover{
-    transform: translateX(30px);
+    padding-left:30px;
 }
 .ufo h2{
     font-size: 50px;
@@ -173,8 +172,7 @@
 }
 .ufo .picture{
     position: relative;
-    background-image: url(../img/pink.png); 
-}
+    }
 .ufo .picture img{
     position: absolute;
     top:10px;
@@ -239,8 +237,7 @@ color:rgb(89, 170, 190);
 .light .picture{
     position: relative;
     /* ../上一層資料夾 */
-    background-image: url(../img/blue.png);
-}
+    }
 
 .light .picture img {
     width: 100%;
@@ -321,6 +318,9 @@ transition:2s;
 .yilanchair img{
     width: 100%;
 }
+.yummyslider .slick-slide{
+    height:100%!important;
+}
 .yilanchair h2{
     text-align: center;
     margin:20px;
@@ -352,23 +352,21 @@ transition:2s;
     font-size: 0.9em;
 }
 .material img{
-    width: 80%;
-}
-.material{
-    position: relative;
-}
+    width: 100%;
+    }
+
+.materialiconwords{
+    display: grid;
+    grid-template-columns:10% 90%;
+    padding-left:180px;  
+    }
 .material p{
-    line-height: 7;
-    position: absolute;
-    left:450px;
-    top:120px;
+    line-height: 5;
     font-size: 1.5em;
     color: rgb(75, 73, 73);
 }
 .material h2{
-    position: absolute;
-    top:50px;
-    left:500px;
+    text-align: center;
     color:rgb(171, 202, 70);
  
 }
@@ -403,15 +401,20 @@ transition:2s;
 
 .designconceptwords{
     margin-left: 10px;
+    margin-top: 60px;
    
 }
-
+.lightslider .slick-slide{
+    height:100%!important;
+}
 .shilogo img{
     width: 100%;
 }
-
 .lightexploded{
     width:70%;
+}
+.museumslider .slick-slide{
+    height:100%!important;
 }
 .museum img{
     width: 100%;
@@ -436,6 +439,135 @@ transition:2s;
 .onsale{
     text-align: center;
 }
+/* 顏木 */
+.yenmu h1{
+    color: rgb(6, 72, 134);
+}
+.yenmu h2{
+    color: rgb(6, 72, 134);
+    margin-left:20px;
+    margin-top:0px;
+}
+.float-designconcept{
+    text-align: center;
+    line-height: 30px;
+}
+.woodexperiment{
+    text-align: center;
+    line-height: 30px;
+    }
+.colorchart{
+    text-align: center;
+    line-height: 30px;
+}
+.modelingsample{
+    text-align: center;
+    line-height: 30px; 
+}
+.group{
+    text-align: center;
+    line-height: 30px;
+}
+
+.yenmuslider .slick-slide{
+    height:100%!important;
+}
+ 
+iframe{
+    width:100%;
+    height: 600px;
+}
+/* flag */
+.flag h1{
+    color: rgb(128, 148, 180);
+}
+.flag h2{
+    color: rgb(128, 148, 180); 
+}
+.flag .information1{
+    margin-top: 20px;
+}
+.flag .information2{
+    margin-top: 20px;
+}
+
+
+
+/* 作品頁 */
+.tag{
+    position: fixed;
+    min-width: 1200px;
+    max-width: 1200px;
+    bottom:8vh;
+
+    }
+.tag a{
+    display:block;
+    width:30%;
+    line-height: 40px;
+    cursor:pointer;
+    font-size: 15px;
+    
+}
+.work-box{
+    width:85%;
+    background-color: rgb(230, 223, 223);
+    height:550px;
+    display: grid;
+    grid-template-columns: 30% 70%; 
+    margin-left: auto;
+    border-bottom:1.5px solid rgb(255, 255, 255);
+    }
+.work-box img{
+    object-fit: contain;
+    width: 100%;
+    height:500px;
+    margin:10px;
+    }
+.work-box-left{
+    margin:20px;
+    line-height: 30px;
+    font-size: 13px;
+    margin-top: 70px;
+    }
+.work-box-left a{
+    text-decoration: none; 
+    }
+.work-box-left h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.work-box ul, .work-box button{
+    display:none!important;
+}
+/* 消失動畫 */
+.disappear{
+    /* 動畫:名字 秒數 停留在動畫的最後一個時間點 */
+    animation: disappear .5s forwards
+}
+@keyframes disappear{
+    100%{
+        height:0;
+        display:none;
+        transform: scale(0)
+        }       
+}
+/* 出現動畫 */
+.appear{
+    animation: appear .5s forwards
+}
+@keyframes appear{
+    0%{
+        height:0;
+        transform:scale(0)
+    }
+    100%{
+        height:550;
+        display:block;
+        transform:scale(1);
+    }
+}
+
 /* 外掛 */
 /* yummy */
 .slick-prev{
@@ -445,6 +577,18 @@ transition:2s;
 .slick-next{
     right:20px;
     z-index: 1;
+}
+/* slider出現 */
+.indexslider {
+    transform: scaleX(0);
+    transform-origin:100% 50%;
+    animation:3s 1 3.5s indexslider forwards ease;
+}
+@keyframes indexslider{
+    100%{
+        transform:scale(1);
+    }
+
 }
 /* 首頁外掛 */
 .slick-slide{
@@ -525,3 +669,109 @@ li.slick-active:nth-child(3) button:before{
     width:350%
 }
 
+/* loading */
+#loading{
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    background-color: #fff;
+    top:0;
+    left:0;
+    z-index: 2;
+    animation:1s 1 4.1s loadout forwards ease-out;
+}
+@keyframes loadout{
+    100%{
+        transform: translateX(100vw);
+    }
+
+}
+#loading #color{
+    height: 100vh;
+    width: 0;
+    background-color:rgb(177, 150, 121);
+    z-index:3;
+    left:0;
+    /* animation ease */
+    animation: 1s 1 color forwards ;
+    }
+
+    @keyframes color{
+        0%{
+            width:0;
+        }
+        100%{
+            width: 100vw;
+        }
+    }
+
+#loading #logo-text{
+    height: 100vh;
+    width: 100vw;
+    
+    text-align: center;
+    display:grid;
+    align-items: center;
+    z-index: 4;
+    position: absolute;
+    top:0;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+#loading #logo-text span{
+    opacity:0;
+    color: #fff!important;
+}
+#loading #logo-text span:nth-of-type(1){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 1.1s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(2){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 1.3s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(3){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 1.5s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(4){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 1.7s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(5){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 1.9s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(6){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 2.1s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(7){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 2.3s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(8){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 2.5s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(9){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 2.7s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(10){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 2.9s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(11){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 3.1s logo forwards ease-in; 
+}
+#loading #logo-text span:nth-of-type(12){
+    /* 動畫時間 動畫次數 延遲時間 停在最後一格 */
+    animation: 1s 1 3.3s logo forwards ease-in; 
+}
+@keyframes logo{
+    100%{
+        opacity:1;
+    }
+}
