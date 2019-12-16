@@ -576,7 +576,7 @@ iframe{
     position: relative;
 }
 .box{
-    padding:10px;
+    padding:8px;
     margin:5px;
     display:inline-block;
     vertical-align:top;
