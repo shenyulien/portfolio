@@ -934,5 +934,23 @@ li.slick-active:nth-child(3) button:before{
         top:-100px;
         left:-120px;
     }
+    .box{
+        display:block;
+        vertical-align:top;
+        margin-left:0px;
+        margin-right:0px;
+        padding:20px;
+    }
+    .container{
+        min-width:300px;
+        max-width:300px;
+        margin:auto;
+    }
+    .workhover img{
+        width:200px;
+    }
+    #indexpage{
+        margin:5%;
+    }
     
 }
