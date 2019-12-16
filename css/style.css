@@ -288,7 +288,7 @@ color:rgb(89, 170, 190);
     min-width:1300px;
     max-width:1300px;
     margin: 0 auto ;
-    padding: 18vh;
+    padding-top: 18vh;
 }
 .container img{
     width: 100%;
@@ -576,8 +576,8 @@ iframe{
     position: relative;
 }
 .box{
-    padding:0px;
-    margin:5px;
+    padding:15px;
+    margin:40px;
     display:inline-block;
     vertical-align:top;
 }
